@@ -1,0 +1,9 @@
+{
+    "ask_question_intro_text": "Ask a question we've got you.",
+    "account_create_anon_text": "We won't take your info BUT your conversation will appear on the homepage for other users to see",
+    "account_create_private_text": "Create an account with your name and email and your conversation will stay between us (you can choose to share later)",
+    "account_button_anon_text": "Anonymous/Public",
+    "account_button_private_text": "Account/Private",
+    "ask_question_or_text": "or",
+    "see_other_conversations_mode": "You are about to see the conversations other users have asked. You will not be able to ask questions and may only read the conversations. To ask questions, click the back button and then click 'Ask your Question'"
+}

@@ -1,0 +1,54 @@
+type User { 
+  id: ID! @id @db(name: "userID")
+  firstName: String!
+  lastName: String! 
+  email: String! @unique
+  password: String!
+  token: Token @relation(onDelete:CASCADE)
+  avatar: String!
+  isAnon: Boolean! @default(value: false)
+  expertGroups: [ExpertsGroup] @relation(onDelete: SET_NULL)
+  userQuestions: [Question!]! @relation(onDelete: CASCADE)
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+}
+
+type Question {
+  id: ID! @id @db(name:"questionID")
+  userID: User! @relati0n(link: INLINE)
+  isPrivate: Boolean! @default(value: true)
+  expertGroup: ExpertsGroup!
+  questionContent: String!
+  questionResponses: [Response!]! @relation(onDelete: CASCADE)
+  key: String! 
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+}
+
+type Response {
+  id: ID! @id @db(name: "responseID")
+  authorUserID: User! @relation(link: INLINE)
+  questionOrigin: Question! @relation(link: INLINE)
+  responseContent: String!
+  createdAt: DateTime! @createdAt
+  updatedAt: DateTime! @updatedAt
+
+}
+
+type Token {
+  id: ID! @id @db(name: "tokenID")
+  updatedAt: DateTime! @updatedAt
+  iat: Int!
+  exp: Int!
+  tokenVal: String!
+}
+
+ type ExpertsGroup { 
+   id: ID! @id @db(name: expertsGroupID)
+   name: String
+   shortInfo: String
+   longInfo: String
+   favicon: String
+ }
+
+ 

@@ -1,0 +1,98 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "test": "npm run tsc-test",
+    "tsc-test": "tsc --project . --noEmit",
+    "jest": "jest"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|tcomb-form-native)",
+      "node_modules/(?!(jest-)?react-native|react-navigation)"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.ts?(x)",
+      "**/?(*.)+(spec|test).ts?(x)"
+    ],
+    "moduleFileExtensions": [
+      "tsx",
+      "json",
+      "ts",
+      "jsx",
+      "js",
+      "ios.js",
+      "es6"
+    ],
+    "moduleNameMapper": {
+      "en-us.json": "<rootDir>/app/content/en-us.json"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": {
+          "jsx": "react"
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "env-cmd": "^10.0.1",
+    "expo": "^35.0.0",
+    "expo-cli": "^3.7.1",
+    "expo-font": "~7.0.0",
+    "expo-secure-store": "^7.0.0",
+    "fontawesome": "^5.6.3",
+    "generate-password": "^1.4.2",
+    "mobx": "^5.15.0",
+    "mobx-react": "^6.1.4",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-dropdown": "^1.6.4",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
+    "react-native-elements": "^1.2.7",
+    "react-native-gesture-handler": "~1.3.0",
+    "react-native-gifted-chat": "^0.11.4",
+    "react-native-reanimated": "~1.2.0",
+    "react-native-safe-area-context": "~0.3.6",
+    "react-native-uuid": "^1.4.9",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-web": "^0.11.7",
+    "react-navigation": "^4.0.10",
+    "react-navigation-stack": "^1.10.3",
+    "react-navigation-tabs": "^2.5.6",
+    "stream-chat": "^1.1.8",
+    "stream-chat-expo": "^0.3.9",
+    "tcomb-form-native": "^0.6.20",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/expo": "^32.0.13",
+    "@types/jest": "^24.0.18",
+    "@types/react": "16.8.3",
+    "@types/react-native": "^0.57.65",
+    "@types/react-navigation": "^3.0.8",
+    "@types/react-test-renderer": "16.8.3",
+    "babel-preset-expo": "^7.0.0",
+    "jest": "^24.9.0",
+    "jest-expo": "^35.0.0",
+    "react-dom": "16.8.3",
+    "react-test-renderer": "16.8.3",
+    "ts-jest": "^24.1.0",
+    "typescript": "3.6.4"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
+    ]
+  },
+  "private": true
+}
