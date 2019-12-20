@@ -1,0 +1,6 @@
+﻿Broken features and errors:
+* The only button that works in profile is categories. 
+* The only two buttons that work in categories is health and animal rights. 
+* Splash page that’s supposed to appear before you enter the categories page are not present. 
+* Everything beyond registering the user and the user’s bank account is not complete. This involves the social media aspect, browsing the categories, and customizing the user’s profile.
+* Created bottom bar navigation layout, which can be found in bottom_nav_menu.xml and mobile_navigation.xml under the layout folder. It is not yet implemented into each page of the app.

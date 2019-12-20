@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">2Bits</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">   EMAIL</string>
+    <string name="prompt_firstName">  FIRST NAME</string>
+    <string name="prompt_LastName">  LAST NAME</string>
+    <string name="prompt_MobileNumber">  MOBILE NUMBER</string>
+    <string name="prompt_password">  PASSWORD</string>
+    <string name="prompt_ConfirmPassword"> CONFIRM PASSWORD</string>
+    <string name="action_sign_up">  SIGN UP</string>
+    <string name="action_sign_up_short">Sign Up</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="prompt_username">USERNAME</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_registration">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="person_name">WILL MUNOZ</string>
+    <string name="person_username">@willmunoz</string>
+    <string name="charity_name">American Red Cross</string>
+    <string name="charity_email">@americanredcross</string>
+    <string name="notification_title1">CHARITY INTERESTS<u>underline</u></string>
+    <string name="following_button">FOLLOWING</string>
+    <string name="friends_button">FRIENDS</string>
+    <string name="stats_button">VIEW MY STATS</string>
+    <string name="badges">BADGES</string>
+    <string name="badge_one">NEWBIE</string>
+    <string name="badge_two">CERTIFIED DONOR</string>
+    <string name="badge_three">CHARITY LOVE</string>
+    <string name="healthSummary">Nonprofit health care organizations
+    provide medical services (this can
+    also include dental, psychiatric or
+    other specialized health services) as
+    well as educational and preventative
+    care services.</string>
+    <string name="animalRightsSummary">Nonprofit Animal Rights organizations
+    providing Animal Medical Care,
+    Prevention of Cruelty,
+    captive animals protection, etc.
+    </string>
+
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_categories">Categories</string>
+    <string name="title_chat">Chat</string>
+    <string name="title_profile">Profile</string>
+    <string name="welcome_reg">WELCOME TO</string>
+    <string name="step1">You choose, you donate.</string>
+    <string name="step1desc">Choose a charity, political organization, or a general category to designate donations to.</string>
+    <string name="step2">Enter card or bank information.</string>
+    <string name="step2desc">Enter the card and/or bank account you would like to donate money from.
+    All your information will be kept secure!</string>
+    <string name="plaidsuccess">SUCCESS</string>
+    <string name="plaidsuccessdesc">Your card/ bank information has been successfully and securely validated,
+    and you are subscribed to donate!</string>
+
+    <!-- Strings related to PLAID api -->
+    <string name="content_success">Public Token:\n%1$s\n\n Account Id:\n%2$s\n\n Account Name:\n%3$s\n\n Institution Id:\n%4$s\n\n Institution Name:\n%5$s</string>
+    <string name="content_cancelled">Institution Id:\n%1$s\n\n Institution Name:\n%2$s\n\n Link Session Id:\n%3$s\n\n Status:\n%4$s</string>
+    <string name="content_exit">Display Message:\n%1$s\n\n Error Code:\n%2$s\n\n Error Message:\n%3$s\n\n Institution Id:\n%4$s\n\n Institution Name:\n%5$s\n\n Status:\n%6$s</string>
+    <string name="content_exception">Exception Class:\n%1$s\n\n Exception Message:\n%2$s</string>
+
+
+</resources>
