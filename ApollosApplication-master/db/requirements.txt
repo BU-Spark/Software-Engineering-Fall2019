@@ -1,0 +1,11 @@
+boto3
+flask
+awscli
+flask-bcrypt
+pyOpenSSL
+PyJWT
+datetime
+os
+shutil
+sys
+dynamodb_encryption_sdk
